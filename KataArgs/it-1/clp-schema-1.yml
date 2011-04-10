@@ -1,0 +1,16 @@
+# asd
+arguments:
+    l: 
+        name: logging
+        type: boolean
+        hasDefaultValue: TRUE
+        default: FALSE
+    p: 
+        name: port
+        type: integer
+        hasDefaultValue: TRUE
+        default: 8080
+    d: 
+        name: directory
+        type: string
+        hasDefaultValue: FALSE
