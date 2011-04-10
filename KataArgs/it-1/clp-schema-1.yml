@@ -1,4 +1,6 @@
-# asd
+# This is the schema of the command line parser. You can specity the
+# arguments, and for each argument you should define the name, the type
+# and if has default value or not.
 arguments:
     l: 
         name: logging
