@@ -1,8 +1,8 @@
-== About this Kata ==
+# About this Kata
 
 This Kata is presented in Robert C.. Martin's book "Clean Code", chapter 14.
 
-== Problem Description ==
+# Problem Description
 
 Most of us have had to parse command-line arguments from time to time. If we don't have a convenient utility, then we simply walk the array of strings that is passed into the main function. There are several good utilities available from various sources, but they probably don't do exactly what we want. So let's write another one!
 
@@ -28,11 +28,11 @@ So the "g" flag indicates a list of strings, ["this", "is", "a", "list"] and the
 
 Make sure your code is extensible, in that it is straightforward and obvious how to add new types of values.
 
-== Clues ==
+# Clues
 
 What the schema should look like and how to specify it is deliberately left vague in the Kata description. An important part of the Kata is to design a concise yet readable format for it.
 
-== Suggested Test Cases ==
+# Suggested Test Cases
 
 make sure you have a test with a negative integer (confusing - sign)
 the order of the arguments need not match the order given in the schema.
