@@ -3,7 +3,7 @@
 /**
  * bootstrap.php
  *
- * This file will load all the external library for the 
+ * This file will load all the external libraries that we will use.
  *
  * @version     $Id$
  * @package     library

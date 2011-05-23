@@ -81,19 +81,19 @@ class CommandLineParser
                  */
                 switch ($config['type'])
                 {
-                case 'boolean':
-                    $this->value[$config['name']] = TRUE;
-                    break;
+                    case 'boolean':
+                        $this->value[$config['name']] = TRUE;
+                        break;
 
-                case 'integer':
-                case 'string':
-                    $value = array_shift($parameters);
-                    $this->value[$config['name']] = $value;
-                    break;
+                    case 'integer':
+                    case 'string':
+                        $value = array_shift($parameters);
+                        $this->value[$config['name']] = $value;
+                        break;
 
-                default:
-                    throw new Exception('Unknown argument type: "' . $argument. '"');
-                    break;
+                    default:
+                        throw new Exception('Unknown argument type: "' . $argument. '"');
+                        break;
                 }
             }
             else
