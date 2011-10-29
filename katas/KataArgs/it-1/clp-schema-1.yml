@@ -1,6 +1,21 @@
 # This is the schema of the command line parser. You can specity the
 # arguments, and for each argument you should define the name, the type
 # and if has default value or not.
+#
+# Each argument has the following properties:
+#
+#   name
+#     The name of the argument
+#
+#   type
+#     The type of the argument {boolean|integer|string}
+#
+#   hasDefaultValue
+#     Boolean that set if the argument ha default value or not
+#
+#   default
+#     In case the above boolean is TRUE, this will be the default value
+#
 arguments:
     l: 
         name: logging

@@ -16,6 +16,20 @@ require_once "CommandLineParser.php";
 
 $parameters = $argv;
 
+// if no parameters, display the help messag
+if (count($parameters) == 1)
+{
+    error('No parameters has been found');
+
+    h1('Usage');
+    echo "php run.php [SCHEMA] [PARAMETERS]\n\n";
+
+    h1('Sample');
+    echo "php run.php clp-schema-1.yml -l -p 8080 -d /asd/asd/asd\n\n";
+
+    die;
+}
+
 // grab the clp schema
 $schemaYaml = $parameters[1];
 
@@ -38,11 +52,12 @@ try
 }
 catch (Exception $e)
 {
-    error( (string) $e );
-    exit(1);
+    error((string) $e);
+    die;
 }
 
+h1('Success');
+echo "Displaying the array with the parsed parameters\n\n";
 var_dump($result);
-die;
 
 ?>
