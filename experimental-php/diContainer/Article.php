@@ -27,7 +27,7 @@ var_dump($articles);
 // 2
 
 $mapper = 
-    function ($article) use ($method)
+    function ($article)
     {
         return $article->getTitle();
     };
